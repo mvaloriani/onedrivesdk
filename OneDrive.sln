@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneDrive", "OneDrive\OneDri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFOneDriveSDKTest", "WPFOneDriveSDKTest\WPFOneDriveSDKTest.csproj", "{6DC1841B-3A06-46AF-B8D5-7BAEE061A600}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet Package", "NuGet Package", "{DBE94E1F-A305-4862-9A9C-53F39C735A44}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet Package\WPFOneDriveLibrary.1.0.1.nupkg = NuGet Package\WPFOneDriveLibrary.1.0.1.nupkg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
