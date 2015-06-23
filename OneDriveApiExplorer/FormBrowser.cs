@@ -244,7 +244,7 @@ namespace NewApiBrowser
         }
         private async Task SignIn()
         {
-            Connection = await OAuthAuthenticator.SignInToMicrosoftAccount(this);
+            Connection = await OAuthAuthenticator.SignInToMicrosoftAccount();
             if (null != Connection)
             {
                 await LoadFolderFromId("root");

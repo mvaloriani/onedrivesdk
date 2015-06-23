@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MicrosoftAccount;
+using System;
 using System.Threading.Tasks;
-using MicrosoftAccount.WindowsForms;
 
-namespace NewApiBrowser
+
+namespace OneDrive
 {
     public class OAuthTicket : OneDrive.IAuthenticationInfo
     {

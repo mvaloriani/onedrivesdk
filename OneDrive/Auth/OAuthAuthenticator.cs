@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MicrosoftAccount.WindowsForms;
 using OneDrive;
+using MicrosoftAccount;
 
-namespace NewApiBrowser
+
+namespace OneDrive
 {
     public static class OAuthAuthenticator
     {
         private const string msa_client_id = "0000000044128B55";
         private const string msa_client_secret = "amw-eMF4Ps-jzDVv6qwL4scqp2iFI29l";
 
-        public static async Task<ODConnection> SignInToMicrosoftAccount(System.Windows.Forms.IWin32Window parentWindow)
+        public static async Task<ODConnection> SignInToMicrosoftAccount()
         {
             string oldRefreshToken = Properties.Settings.Default.RefreshToken;
             AppTokenResult appToken = null;
