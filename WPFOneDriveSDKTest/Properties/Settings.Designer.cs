@@ -22,5 +22,17 @@ namespace WPFOneDriveSDKTest.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TestSettings {
+            get {
+                return ((string)(this["TestSettings"]));
+            }
+            set {
+                this["TestSettings"] = value;
+            }
+        }
     }
 }

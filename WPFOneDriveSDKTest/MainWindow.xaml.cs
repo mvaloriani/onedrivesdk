@@ -40,6 +40,9 @@ namespace WPFOneDriveSDKTest
 
         public MainWindow()
         {
+
+            Properties.Settings.Default.TestSettings = "questo e' un altro test";
+            Properties.Settings.Default.Save();
             InitializeComponent();
 
             
