@@ -13,7 +13,7 @@ namespace OneDrive
 
         public static async Task<ODConnection> SignInToMicrosoftAccount()
         {
-            string oldRefreshToken = Properties.Settings.Default.RefreshToken;
+            string oldRefreshToken = Properties.ODSettings.Default.RefreshToken;
             AppTokenResult appToken = null;
             if (!string.IsNullOrEmpty(oldRefreshToken))
             {
@@ -41,7 +41,7 @@ namespace OneDrive
         {
             if (!string.IsNullOrEmpty(refreshToken))
             {
-                var settings = Properties.Settings.Default;
+                var settings = Properties.ODSettings.Default;
                 settings.RefreshToken = refreshToken;
                 settings.Save();
             }

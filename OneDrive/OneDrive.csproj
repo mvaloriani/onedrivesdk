@@ -120,10 +120,10 @@
     <Compile Include="ODConnection.cs" />
     <Compile Include="ODConnection.public.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Include="Properties\ODSettings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
+      <DependentUpon>ODSettings.settings</DependentUpon>
     </Compile>
     <Compile Include="SpecialFolder.cs" />
     <Compile Include="Utility\EnumExtensionMethods.cs" />
@@ -134,9 +134,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
+    <None Include="Properties\ODSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <LastGenOutput>ODSettings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
