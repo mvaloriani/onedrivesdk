@@ -22,9 +22,16 @@ namespace MicrosoftAccount
             var authorizationCode = await WPFMicrosoftAccountAuth.GetAuthenticationToken(clientId, scopes, OAuthFlow.AuthorizationCodeGrant, owner);
             if (string.IsNullOrEmpty(authorizationCode))
                 return null;
-
-            var tokens = await RedeemAuthorizationCodeAsync(clientId, WPFMicrosoftAccountAuth.OAuthDesktopEndPoint, clientSecret, authorizationCode);
-            return tokens;
+            try
+            {
+                var tokens = await RedeemAuthorizationCodeAsync(clientId, WPFMicrosoftAccountAuth.OAuthDesktopEndPoint, clientSecret, authorizationCode);
+                return tokens;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+           
         }
 
         public static async Task<AppTokenResult> RedeemRefreshTokenAsync(string clientId, string clientSecret, string refreshToken)
